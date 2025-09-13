@@ -3,7 +3,7 @@
 ## Estrutura de Branches
 
 ### Branches Principais
-- **`main`** (ou `master`): Código em produção, sempre estável
+- **`main`**: Código em produção, sempre estável
 - **`develop`**: Branch de integração para desenvolvimento
 
 ### Branches de Feature
