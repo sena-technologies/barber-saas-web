@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Barbearia Sena — Agendamentos e Loja",
-  description: "Site da barbearia com serviços, loja de produtos e agendamento online.",
+  title: "Maro Barbearia — Agendamentos e Loja",
+  description: "Barbearia premium com serviços exclusivos, loja de produtos e agendamento online.",
 };
 
 export default function RootLayout({
@@ -27,21 +27,40 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}
       >
-        <header className="border-b border-neutral-200 bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60">
-          <div className="mx-auto max-w-5xl px-4 h-14 flex items-center justify-between">
-            <a href="/" className="font-semibold tracking-tight">Barbearia Sena</a>
-            <nav className="flex items-center gap-4 text-sm">
-              <a className="hover:underline" href="/">Início</a>
-              <a className="hover:underline" href="/agendamento">Agendamento</a>
-              <a className="hover:underline opacity-60 pointer-events-none" href="#" title="Em breve">Serviços</a>
-              <a className="hover:underline opacity-60 pointer-events-none" href="#" title="Em breve">Loja</a>
+        <header className="border-b border-neutral-800/20 bg-black/95 backdrop-blur supports-[backdrop-filter]:bg-black/90">
+          <div className="mx-auto max-w-6xl px-6 h-16 flex items-center justify-between">
+            <a href="/" className="flex items-center gap-3">
+              <img 
+                src="/maro.jpg" 
+                alt="Maro Barbearia" 
+                className="h-8 w-8 rounded-full object-cover"
+              />
+              <span className="font-bold text-xl tracking-tight text-white">MARO BARBEARIA</span>
+            </a>
+            <nav className="flex items-center gap-6 text-sm font-medium">
+              <a className="text-white/80 hover:text-white transition-colors" href="/">Início</a>
+              <a className="text-white/80 hover:text-white transition-colors" href="/agendamento">Agendamento</a>
+              <a className="text-white/40 pointer-events-none" href="#" title="Em breve">Serviços</a>
+              <a className="text-white/40 pointer-events-none" href="#" title="Em breve">Loja</a>
             </nav>
           </div>
         </header>
         <main>{children}</main>
-        <footer className="mt-16 border-t border-neutral-200">
-          <div className="mx-auto max-w-5xl px-4 py-6 text-xs text-neutral-600">
-            © {new Date().getFullYear()} Barbearia Sena. Todos os direitos reservados.
+        <footer className="mt-20 border-t border-neutral-800/20 bg-black">
+          <div className="mx-auto max-w-6xl px-6 py-8">
+            <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+              <div className="flex items-center gap-3">
+                <img 
+                  src="/maro.jpg" 
+                  alt="Maro Barbearia" 
+                  className="h-6 w-6 rounded-full object-cover"
+                />
+                <span className="text-white font-semibold">MARO BARBEARIA</span>
+              </div>
+              <div className="text-xs text-neutral-400">
+                © {new Date().getFullYear()} Maro Barbearia. Todos os direitos reservados.
+              </div>
+            </div>
           </div>
         </footer>
       </body>
