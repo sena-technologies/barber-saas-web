@@ -60,6 +60,16 @@ export default function RootLayout({
               <div className="text-xs text-neutral-400">
                 © {new Date().getFullYear()} Maro Barbearia. Todos os direitos reservados.
               </div>
+
+              <div className="flex items-center space-x-2">
+                <p className="text-gray-400 text-sm">
+                  Desenvolvido por{' '}
+                </p>
+                <span className="text-red-400 hover:text-red-300 transition-colors font-semibold">
+                  Sena Technologies
+                </span>
+              </div>
+            
             </div>
           </div>
         </footer>
